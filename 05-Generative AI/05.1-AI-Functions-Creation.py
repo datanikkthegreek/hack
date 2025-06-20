@@ -135,60 +135,6 @@
 
 # COMMAND ----------
 
-# DBTITLE 1,Retrieve Customer Details by Transaction ID
-# MAGIC %sql
-# MAGIC /* TASK 6: Drop the function get_customer_details if it exists and create / replace the function get_customer_details again */
-# MAGIC /*
-# MAGIC YOUR DROP CODE get_customer_details;
-# MAGIC
-# MAGIC YOUR CODE.... get_customer_details (
-# MAGIC   tran_id STRING COMMENT 'Transaction ID of the customer to be searched'
-# MAGIC ) 
-# MAGIC RETURNS TABLE(
-# MAGIC   id STRING, 
-# MAGIC   is_fraud BOOLEAN, 
-# MAGIC   amount DOUBLE, 
-# MAGIC   customer_id STRING, 
-# MAGIC   nameDest STRING,
-# MAGIC   nameOrig STRING, 
-# MAGIC   type STRING, 
-# MAGIC   firstname STRING, 
-# MAGIC   lastname STRING, 
-# MAGIC   email STRING, 
-# MAGIC   address STRING, 
-# MAGIC   country STRING,
-# MAGIC   creation_date STRING, 
-# MAGIC   age_group DOUBLE, 
-# MAGIC   countryOrig_name STRING,
-# MAGIC   countryDest_name STRING
-# MAGIC )
-# MAGIC COMMENT "This function returns the customer details for a given Transaction ID, along with their transaction details" 
-# MAGIC RETURN (
-# MAGIC   SELECT
-# MAGIC     id, 
-# MAGIC     is_fraud, 
-# MAGIC     amount, 
-# MAGIC     customer_id,  
-# MAGIC     nameDest, 
-# MAGIC     nameOrig, 
-# MAGIC     type, 
-# MAGIC     firstname, 
-# MAGIC     lastname, 
-# MAGIC     email, 
-# MAGIC     address, 
-# MAGIC     country, 
-# MAGIC     creation_date, 
-# MAGIC     age_group,
-# MAGIC     countryOrig_name, 
-# MAGIC     countryDest_name
-# MAGIC   FROM 
-# MAGIC     gold_transactions
-# MAGIC   WHERE
-# MAGIC     id = tran_id
-# MAGIC )*/
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ### Example:
 # MAGIC
