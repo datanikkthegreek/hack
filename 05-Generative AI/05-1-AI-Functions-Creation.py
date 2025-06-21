@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC # **_Task 9_**
-# MAGIC No coding needed here, but understanding what is going on is important for the next step!
+# MAGIC **No coding needed here**, but understanding what is going on is important for the next step!
 # MAGIC
 # MAGIC Read briefly through the notebook and primarily understand why we create a function called "get_customer_details".
 # MAGIC Specifically investigate step 14 where we: 
